@@ -1,0 +1,301 @@
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:2:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mdef example1 = 3                    // evaluated when called[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:3:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval example2 = 2                    // evaluated immediately[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:4:6: classes cannot be lazy[0m
+[0m[[0m[31merror[0m] [0m[0mlazy val example3 = 2               // evaluated once when needed[0m
+[0m[[0m[31merror[0m] [0m[0m     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:6:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mdef squareByValue(x: Double): Unit = ???     // call by value[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:7:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mdef squareByName(x: => Double): Unit = ???    // call by name[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:8:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mdef myFct(binding: Int*) = ???[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:14:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mdef sum1(f: Int => Int): (Int, Int) => Int = [0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:16:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    sumf[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:19:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mdef sum2(f: Int => Int)(a: Int, b: Int): Int = ???[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:25:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mdef cube(x: Int) = [0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:34:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mdef f = ???[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:35:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval f2: (Int, Int) => Int = f           // uncurried version[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:36:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval f3: Int => Int => Int = f2.curried  // curried version[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:37:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval f4: (Int, Int) => Int = Function.uncurried(f3)      // back to the uncurried version[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:41:46: ';' expected but ':' found.[0m
+[0m[[0m[31merror[0m] [0m[0mclass MyClass(x: Int, val y: Int, var z: Int):     [0m
+[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:44:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    def this(x: Int) = [0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:47:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    def nb1 = x                         // computed every time its called[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:48:13: expected start of definition[0m
+[0m[[0m[31merror[0m] [0m[0m    private def test(a: Int): Int = ???[0m
+[0m[[0m[31merror[0m] [0m[0m            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:49:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    val nb3 = x + y                     // computed only once[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:51:14: expected start of definition[0m
+[0m[[0m[31merror[0m] [0m[0m    override def toString = [0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:53:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mend MyClass                             // explicit declaration of body end[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:55:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval class1 = new MyClass(1, 2, 3)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:63:24: ';' expected but ':' found.[0m
+[0m[[0m[31merror[0m] [0m[0mabstract class TopLevel:[0m
+[0m[[0m[31merror[0m] [0m[0m                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:65:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    def method2(x: Int): Int = x * x        // method with implementation[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:66:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mend TopLevel[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:68:30: ';' expected but ':' found.[0m
+[0m[[0m[31merror[0m] [0m[0mclass Level1 extends TopLevel:[0m
+[0m[[0m[31merror[0m] [0m[0m                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:70:14: expected start of definition[0m
+[0m[[0m[31merror[0m] [0m[0m    override def method2(x: Int): Int = ???[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:71:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mend Level1[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:78:27: ';' expected but ':' found.[0m
+[0m[[0m[31merror[0m] [0m[0mclass MyClass2[T](arg1: T):[0m
+[0m[[0m[31merror[0m] [0m[0m                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:80:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mend MyClass2[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:82:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval t1 = new MyClass2[Int](1)               [0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:83:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval t2 = new MyClass2(1)                    // type inference[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:85:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mdef myFct2[T <: TopLevel](arg: T): T = ???              // must derive from TopLevel or be TopLevel[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:86:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mdef myFct3[T >: Level1](arg: T): T = ???                // must be a supertype of Level1[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:87:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mdef myFct4[T >: Level1 <: TopLevel](arg: T): T = ???[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:101:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval myMap = Map("a" -> 42, "b" -> 43)[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:102:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mdef getMapValue(s: String): String =[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:105:9: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m        case None => "No value found"[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:107:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mdef getMapValue2(s: String): String = [0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:110:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval a1 = getMapValue("a")  // returns "Value found: 42"[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:111:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval a2 = getMapValue("c")  // returns "No value found"[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:114:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval pairs = "adddbdddc"[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:115:1: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0mval options: List[Option[Char]] = Some('a') :: None :: Some('b') :: Nil[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:123:21: ';' expected but ':' found.[0m
+[0m[[0m[31merror[0m] [0m[0mclass CollectionTest:[0m
+[0m[[0m[31merror[0m] [0m[0m                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:126:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    val fruit = "apples" :: ("oranges" :: ("pears" :: Nil)) // parens optional, :: (pronounced cons) is right-associative[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:127:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    fruit.head   // "apples"[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:128:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    fruit.tail   // List("oranges", "pears")[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:129:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    val empty = List()[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:132:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    val nums = Vector("louis", "frank", "hiromi")[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:133:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    nums(1)                     // element at index 1, returns "frank", complexity O(log(n))[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:134:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    nums.updated(2, "helena")   // new vector with a different string at index 2, complexity O(log(n))[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:136:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    val fruitSet = Set("apple", "banana", "pear", "banana")[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:137:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    fruitSet.size    // returns 3: there are no duplicates, only one banana[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:139:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    val r: Range = 1 until 5 // 1, 2, 3, 4[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:140:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    val s1: Range = 1 to 5    // 1, 2, 3, 4, 5[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:141:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    1 to 10 by 3  // 1, 4, 7, 10[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:142:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    6 to 1 by -2  // 6, 4, 2[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:144:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    val set1 = (1 to 6).toSet[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:145:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    set1.map(_ + 2) // adds 2 to each element of the set[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:147:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    val s2 = "Hello World"[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:148:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    s2.filter(c => c.isUpper) // returns "HW"; strings can be treated as Seq[Char][0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:151:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    val n = ???       // temp[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:152:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    val x = ???       // temp[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:153:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    val ys = ???       // temp[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:154:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    val p = ???       // temp[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:155:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    val op = ???       // temp[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:156:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    val z = ???       // temp[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:157:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    val x1 = ???       // temp[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:158:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    val xn = ???       // temp[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:161:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    val xs = List(???)[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:162:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    xs.length         // number of elements, complexity O(n)[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:163:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    xs.last           // last element (exception if xs is empty), complexity O(n)[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:164:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    xs.init           // all elements of xs but the last (exception if xs is empty), complexity O(n)[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:165:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    xs.take(n)        // first n elements of xs[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:166:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    xs.drop(n)        // the rest of the collection after taking n elements[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:167:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    xs.splitAt(n)     // same as (xs take n, xs drop n)[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:168:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    xs(n)             // the nth element of xs, complexity O(n)[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:169:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    xs ++ ys          // concatenation, complexity O(n)[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:170:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    xs.reverse        // reverse the order, complexity O(n)[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:171:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    xs.updated(n, x)  // same list than xs, except at index n where it contains x, complexity O(n)[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:172:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    xs.indexOf(x)     // the index of the first element equal to x (-1 otherwise)[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:173:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    xs.contains(x)    // same as xs indexOf x >= 0[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:174:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    xs.filter(p)      // returns a list of the elements that satisfy the predicate p[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:175:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    xs.filterNot(p)   // filter with negated p[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:176:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    xs.partition(p)   // same as (xs filter p, xs filterNot p)[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:177:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    xs.takeWhile(p)   // the longest prefix consisting of elements that satisfy p[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:178:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    xs.dropWhile(p)   // the remainder of the list after any leading element satisfying p have been removed[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:179:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    xs.span(p)        // same as (xs takeWhile p, xs dropWhile p)[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:181:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    List(x1, xn).reduceLeft(op)   // (...(x1 op x2) op x3) op ...) op xn[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:182:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    List(x1, xn).foldLeft(z)(op)  // (...( z op x1) op x2) op ...) op xn[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:183:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    List(x1, xn).reduceRight(op)  // x1 op (... (x{n-1} op xn) ...)[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:184:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    List(x1, xn).foldRight(z)(op) // x1 op (... (    xn op  z) ...)[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:186:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    xs.exists(p)   // true if there is at least one element for which predicate p is true[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:187:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    xs.forall(p)   // true if p(x) is true for all elements[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:188:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    xs.zip(ys)     // returns a list of pairs which groups elements with same index together[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:189:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    xs.unzip       // opposite of zip: returns a pair of two lists[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:190:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    xs.flatMap(f)  // applies the function to all elements and concatenates the result[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:195:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    xs.flatten     // flattens a collection of collection into a single-level collection[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:196:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    xs.groupBy(f)  // returns a map which points to a list of elements[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/pedro/dev/courses/scala-course/week1/cheatsheet.scala:197:5: expected class or object definition[0m
+[0m[[0m[31merror[0m] [0m[0m    xs.distinct    // sequence of distinct entries (removes duplicates)[0m
+[0m[[0m[31merror[0m] [0m[0m    ^[0m
+[0m[[0m[31merror[0m] [0m[0m100 errors found[0m
