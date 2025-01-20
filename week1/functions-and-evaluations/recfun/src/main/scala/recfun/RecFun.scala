@@ -23,10 +23,11 @@ object RecFun extends RecFunInterface:
      */
     def balance(chars: List[Char]): Boolean = 
         def balanceIt(head: Char, tail: List[Char], open: Int, close: Int): Boolean = 
-            if tail.isEmpty then
+            if close > open then return false
+            else if tail.isEmpty then
                 if head == ')' then return open == (close + 1)
+                else if head == '(' then return (open + 1) == close
                 open == close
-            else if close > open then return false  
             else if head == '(' then balanceIt(tail.head, tail.tail, open + 1, close)
             else if head == ')' then balanceIt(tail.head, tail.tail, open, close + 1)
             else balanceIt(tail.head, tail.tail, open, close)

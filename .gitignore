@@ -1,0 +1,6 @@
+.metals/
+.git/
+.bsp/
+.vscode/
+.scala-build/
+
